@@ -1,8 +1,8 @@
 #!/bin/bash
 /**
- * main - Entry point
- * 
- * Return: Always 0 (Success) 
+ * main - prints a string
+ * Description: prints "Programming is like building a mulitilingual puzzle"
+ * Return: 0  
  */
 int main(void)
 {
