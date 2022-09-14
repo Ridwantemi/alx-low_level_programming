@@ -1,4 +1,4 @@
-#include <main.h>
+#include"main.h"
 /**
  *print_times_table - prints the n times table, starting with 0
  *@n: number of the times table
@@ -14,6 +14,10 @@ for (j = 0; j <= n; j++)
 {
 k = j * 1;
 if (j == 0)
+{
+_putchar(k + '0');
+}
+else if (k < 10 && j != 0)
 {
 _putchar(',');
 _putchar(' ');
