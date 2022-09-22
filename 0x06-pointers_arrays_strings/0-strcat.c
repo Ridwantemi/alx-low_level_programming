@@ -1,16 +1,12 @@
-#include <string.h>
 #include "main.h"
 /**
  **_strcat - concatenates two strings
- *@dest: dest
- *@src: src
- *Return: string
+ *@dest: parameter pointer to a char
+ *@src: parameter pointer to a char
+ *Return: value of dest
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
-char *dest[] = "dest";
-char *src[] = "src";
-char dest;
 
 int i;
 int j;
@@ -25,6 +21,7 @@ dest[i] = src[j];
 i++;
 j++;
 }
+
 dest[i] = '\0';
 return (dest);
 }
