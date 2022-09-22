@@ -17,6 +17,7 @@ for (j = 0; j <= 51; j++)
 if (s[j] == str[i])
 {
 str[i] = s1[j];
+break;
 }
 }
 }
