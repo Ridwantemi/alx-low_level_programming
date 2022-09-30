@@ -8,18 +8,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, first_num, sec_num, product;
+	int i, j, mul;
 
 	if (argc <= 2)
 	{
-		return (printf("Erro\n"), 1);
+		printf("Error\n");
+		return (1);
 	}
-	for (i = 0; i < argc; i++)
-	{
-		first_num = atoi(argv[1]);
-		sec_num = atoi(argv[2]);
-	}
-	product = first_num * sec_num;
-	printf("%d\n", product);
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mul = i * j;
+
+	printf("%d\n", mul);
 	return (0);
 }
