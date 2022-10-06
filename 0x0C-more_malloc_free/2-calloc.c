@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/***
- *_calloc - allocates memory for an array
+/**
+ **_calloc- allocates memory for an array
  *@nmemb: first input parameter
  *@size: second input parameter
  *Return: pointer
