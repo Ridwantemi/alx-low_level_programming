@@ -185,7 +185,7 @@ void print_osabi(unsigned char *e_ident)
  * print_abi - Prints the ABI version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF ABI version.
  */
-void print_abi(unsigned char *e_ident)
+void print_abi(unsigned char*e_ident)
 {
 	printf("  ABI Version:%d\n",
 	       e_ident[EI_ABIVERSION]);
@@ -196,7 +196,7 @@ void print_abi(unsigned char *e_ident)
  * @e_type: The ELF type.
  * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_type(unsigned int e_type, unsigned char *e_ident)
+void print_type(unsigned int e_type,unsigned char *e_ident)
 {
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
@@ -230,10 +230,10 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_entry(unsigned long int e_entry, unsigned char *e_ident)
+void print_entry(unsigned long int e_entry,unsigned char *e_ident)
 {
 	printf("Entry point address:");
-
+7
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
 		e_entry = ((e_entry << 8) & 0xFF00FF00) |
@@ -275,7 +275,7 @@ void close_elf(int elf)
  * Description: If the file is not an ELF File or
  *              the function fails - exit code 98.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc,char *argv[])
 {
 	Elf64_Ehdr *header;
 	int o, r;
